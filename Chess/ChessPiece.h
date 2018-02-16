@@ -1,7 +1,6 @@
 #ifndef _CHESSPIECE_H_
 #define _CHESSPIECE_H_
 
-#include "stdafx.h"
 #include <string>
 #include "Point.h"
 #include "ChessPoint.h"

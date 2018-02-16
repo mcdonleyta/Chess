@@ -7,6 +7,7 @@
 #define SCREENWIDTH 33
 #define SCREENHEIGHT 17
 
+#ifndef _OS_MAC_
 #define BOARDBLANK		((char)176)
 #define BOARDTOPWALL	((char)205)
 #define BOARDBOTWALL	((char)205) 
@@ -18,6 +19,19 @@
 #define BOARDCORNERBR	((char)188)
 #define BOARDVDIV		((char)186)
 #define BOARDHDIV		((char)205)
+#else
+#define BOARDBLANK		((char)'.')
+#define BOARDTOPWALL	((char)'=')
+#define BOARDBOTWALL	((char)'=') 
+#define BOARDLEFTWALL	((char)'|') 
+#define BOARDRIGHTWALL	((char)'|')
+#define BOARDCORNERTL	((char)'x')
+#define BOARDCORNERTR	((char)'x')
+#define BOARDCORNERBL	((char)'x')
+#define BOARDCORNERBR	((char)'x')
+#define BOARDVDIV		((char)'|')
+#define BOARDHDIV		((char)'-')
+#endif
 
 #define BLACK  1		//Direction of movement as well as player id
 #define WHITE  -1
