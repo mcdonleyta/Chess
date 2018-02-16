@@ -7,6 +7,8 @@
 #define SCREENWIDTH 33
 #define SCREENHEIGHT 17
 
+#define _OS_MAC_
+
 #ifndef _OS_MAC_
 #define BOARDBLANK		((char)176)
 #define BOARDTOPWALL	((char)205)
@@ -20,7 +22,7 @@
 #define BOARDVDIV		((char)186)
 #define BOARDHDIV		((char)205)
 #else
-#define BOARDBLANK		((char)'.')
+#define BOARDBLANK		((char)':')
 #define BOARDTOPWALL	((char)'=')
 #define BOARDBOTWALL	((char)'=') 
 #define BOARDLEFTWALL	((char)'|') 
